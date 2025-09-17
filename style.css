@@ -354,7 +354,6 @@ main {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    /* transform: scaleX(1); */
 }
 
 .project_container::before {
@@ -529,7 +528,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    /* spacing between categories */
 }
 
 .category_heading {
@@ -863,14 +861,18 @@ footer {
         text-shadow: none;
         align-items: center;
     }
+    .project_link{
+        z-index: 2;
+    }
 
     .project_lang {
         order: -1;
     }
 
-    .project_number {
+    .project_container:hover .project_number {
         display: none;
     }
+   
 
     .project_container::before {
         display: none;
@@ -889,12 +891,6 @@ footer {
     .category_heading {
         font-size: 1.5rem;
     }
-
-    /* .skill_card:hover {
-        transform: none;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        background: #fff;
-    } */
 
     /* Contact form */
     .contact-form {

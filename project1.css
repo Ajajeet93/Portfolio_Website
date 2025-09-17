@@ -13,18 +13,45 @@ body {
   padding: 20px;
 }
 
-/* Header  */
-.main_header {
-  justify-content: center;
-  left: 0;
-  background-color: white; 
-  position: relative; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  padding: 1rem;
+.back_btn {
+  /* Keep this position and z-index for it to stick on top */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; 
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f0f4f8;
+  padding: 0.3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: left;
 }
+
+.page_back {
+  height: auto;
+  width: 120px;
+  border: 2px solid #3b82f6;
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.page_back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #3b82f6;
+  color: white;
+}
+
+
 main{
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 .main_header .site_link {
     font-size: 1.8rem; 
