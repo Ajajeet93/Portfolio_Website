@@ -245,22 +245,27 @@
             </section>
 
 
+            <!-- Contact Me -->
             <section class="contact-me-section" id="contact-me">
+                
                 <h2 class="contact-heading">Contact Me</h2>
                 <p class="contact-description">I'm always open to new opportunities and collaborations. Whether you have
                     a question, a suggestion, or a project to discuss, feel free to reach out using the form.</p>
-                <form action="" class="contact-form">
-                    <label for="user_name"></label> <input type="text" name="user_name" id=""
+                <div id="display_msg">
+                    <p id="msg1"></p>
+                </div>
+                <form action="" id="show_msg" class="contact-form">
+                    <label for="user_name"></label> <input type="text" name="user_name" id="user_name"
                         placeholder="Enter Your Name" required class="form_info_text_area">
-                    <label for=""></label> <input type="email" name="user_email" id=""
+                    <label for=""></label> <input type="email" name="user_email" id="user_email"
                         placeholder="Enter Your E-mail address" required class="form_info_text_area">
-                    <label for=""></label> <input type="number" name="contact_number" id=""
+                    <label for=""></label> <input type="number" name="contact_number" id="contact_number"
                         placeholder="Contact Number" class="form_info_text_area">
-                    <label for=""></label> <input type="text" name="message_heading" id="" placeholder="Heading"
+                    <label for=""></label> <input type="text" name="message_heading" id="msg_heading" placeholder="Heading"
                         class="form_info_text_area">
-                    <label for=""></label> <textarea name="message" id="" placeholder="Enter Your Message"
+                    <label for=""></label> <textarea name="message" id="msg" placeholder="Enter Your Message"
                         class="form_info_text_area"></textarea>
-                    <button class="btn">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </section>
 
